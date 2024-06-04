@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_elements_pricings",
+  "info": {
+    "displayName": "Pricing"
+  },
+  "options": {},
+  "attributes": {
+    "planType": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "isFeature": {
+      "type": "boolean",
+      "default": false
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.button-link"
+    }
+  }
+}
